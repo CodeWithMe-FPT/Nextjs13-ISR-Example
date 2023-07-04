@@ -8,7 +8,7 @@ export interface CategoryRes {
 }
 
 const fetcher = (url: string) =>
-  fetch(url, { cache: "force-cache" })
+  fetch(url)
     .then(async (res) => {
       const data: ICategory[] = await res.json();
       return {

@@ -6,7 +6,7 @@ import { useAllCategory } from "@/hooks/useAllCategory";
 export default function Category() {
   const { data, error } = useAllCategory({
     fallbackData: true,
-    refreshInterval: 1000,
+    refreshInterval: 500,
   });
   if (!data) {
     return <div>Loading....</div>;
